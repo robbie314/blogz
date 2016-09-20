@@ -8,12 +8,18 @@
     </head>
     <body>
         <nav>
+            <ul id="user-account"> <!--I added this line -->
+                <li><a href="/login">login</a></li> <!--i added this line-->
+                <li><a href="/logout">logout</a></li> <!--I added this line -->
+            </ul>
             <ul>
                 <li><a href="/">home</a></li>
                 <li><a href="/blog">all posts</a></li>
                 <li><a href="/blog/newpost">new post</a></li>
             </ul>
+
         </nav>
+        
         {% block content %}
         {% endblock %}
     </body>
